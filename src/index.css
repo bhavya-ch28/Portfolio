@@ -1,0 +1,657 @@
+/* ===== Base Reset & Theme ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* ===== Section Wrapper (optional layout container) ===== */
+section {
+  width: 100%;
+  max-width: 960px;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ===== Typography ===== */
+h1, h2 {
+  color: #00d8ff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 8px #00d8ffaa;
+  font-size: 2.5rem;
+}
+
+p {
+  /* Your global p styles */
+  line-height: 1.6;
+  font-size: 1.125rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+/* ===== Links & Buttons ===== */
+a {
+  color: #00d8ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffaa00;
+  text-decoration: underline;
+}
+
+button,
+.btn {
+  background: #00d8ff;
+  color: #121212;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+button:hover,
+.btn:hover {
+  background: #ffaa00;
+  color: #121212;
+}
+
+/* ===== Skills Grid ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px #00d8ff44;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px #ffaa0044;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  color: #00d8ff;
+}
+
+/* ===== Projects ===== */
+.project-card {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 12px #00d8ff33;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 20px #ffaa0044;
+}
+
+/* Title + Link container */
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gives space between title and link */
+  color: #00d8ff;
+  margin-bottom: 0.75rem;
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #ffaa00;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #fff176; /* lighter yellow on hover */
+  text-decoration: underline;
+}
+
+/* Description paragraph */
+.project-description {
+  color: #ccc;
+  margin-bottom: 1rem;
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+/* Tech Used styling */
+.project-tech {
+  font-weight: 600;
+  color: #a0aec0; /* soft, muted blue-gray */
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tech-label {
+  color: #718096; /* subtle gray-blue */
+  font-style: normal; /* no italic */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.tech-text {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #cbd5e0; /* lighter gray */
+  font-weight: 500;
+  border-bottom: 1.5px solid #718096; /* subtle underline */
+}
+
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #111;
+  margin-top: 4rem;
+}
+
+/* ===== Section Box (Reusable Card Container) ===== */
+.section-box {
+  border: 2px solid #0bc5ea;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  background: rgba(15, 32, 39, 0.8);
+  box-shadow: 0 8px 24px rgba(11, 197, 234, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.section-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(11, 197, 234, 0.6);
+}
+
+/* ===== Background Animation (Optional) ===== */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #0f172a);
+  background-size: 300% 300%;
+  animation: gradientShift 20s ease infinite;
+}
+
+.animate-gradientShift {
+  animation: gradientShift 10s ease infinite;
+}
+
+/* ===== Optional Slow Spin Animation ===== */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 5s linear infinite;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .project-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .project-tech {
+    justify-content: flex-start;
+  }
+}
+
+/* ===== About Section Layout ===== */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  text-align: left;
+  max-width: 500px;
+}
+
+.about-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 216, 255, 0.3);
+  object-fit: cover;
+} 
+
+.skill-text {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+  text-align: center !important;
+} 
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:focus {
+  outline: 2px solid #00d8ff;
+  outline-offset: 2px;
+}
+/* Container for title and link side-by-side with space */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between title and link */
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #00bcd4; /* cyan-ish */
+  white-space: nowrap; /* keep on one line */
+}
+
+.project-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffb300; /* amber */
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #ffc107; /* lighter amber */
+}
+
+/* Description */
+.project-description {
+  color: #ccc;
+  margin-bottom: 1rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* Tech used styling - professional & subtle */
+.project-tech {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  font-weight: 600;
+  color: #7a869a; /* muted slate gray */
+  font-size: 1.1rem;
+}
+
+.tech-label {
+  color: #a49f8c; /* subtle warm gray */
+  font-style: italic;
+  font-weight: 700;
+}
+
+.tech-text {
+  background: rgba(96, 110, 123, 0.2); /* subtle slate-blue translucent background */
+  border: 1px solid rgba(96, 110, 123, 0.4); /* soft border for definition */
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #c0c6cc; /* light gray-blue for good visibility */
+  font-weight: 600;
+  user-select: text;
+}
+
+
+/* More/Less button styling */
+.toggle-button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffb300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2rem auto 0; /* center horizontally */
+  padding: 0;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  text-decoration: underline; /* only underline on hover */
+  color: #ffc107; /* lighter amber */
+  background-color: transparent; /* ensure no background highlight */
+  outline: none;
+  box-shadow: none;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+
+/* Responsive: smaller screens */
+@media (max-width: 600px) {
+  .project-header {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .project-tech {
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+}
+.education-entry {
+  background: #2a2a2a;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 12px;
+  color: #ddd;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.2); /* subtle amber glow */
+}
+
+.education-entry::before,
+.education-entry::after {
+  content: '';
+  position: absolute;
+  border: 3px solid #ffc107; /* amber color */
+  border-radius: 8px;
+}
+
+.education-entry::before {
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 12px;
+}
+
+.education-entry::after {
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 12px;
+}
+
+.edu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.edu-degree {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ffc107;
+}
+
+.edu-duration {
+  font-style: italic;
+  color: #bbb;
+}
+
+.edu-institute {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+.experience-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #00d8ff33; /* soft cyan vertical line */
+}
+
+.experience-entry {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.exp-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.exp-duration {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.exp-company {
+  font-weight: 600;
+  color: #00d8ff;
+  margin-bottom: 0.4rem;
+}
+
+.exp-description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+  max-width: 650px;
+}
+
+.exp-tech {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exp-label {
+  font-weight: 700;
+  font-style: italic;
+  color: #ffaa00;
+}
+
+.exp-tech-text {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffd54f;
+  font-weight: 500;
+}
+
+.exp-divider {
+  margin-top: 1.5rem;
+  border: none;
+  border-top: 1px solid #333;
+  width: 100%;
+}
+
+.exp-company {
+  font-size: 1rem;
+  color: #ffcc80;
+  font-weight: 600;
+}
+
+.exp-description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 750px;
+}
+
+.exp-tech {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  align-items: center;
+}
+
+.exp-label {
+  font-style: italic;
+  font-weight: 600;
+  color: #ffa726;
+}
+
+.exp-tech-text {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.exp-divider {
+  margin-top: 1.5rem;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.certificate-image {
+  width: 300px;           /* width of a postcard */
+  height: 200px;          /* height for good aspect ratio */
+  object-fit: cover;      /* crop nicely */
+  border-radius: 12px;    /* subtle rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 216, 255, 0.35);  /* professional soft glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 100%;        /* responsive */
+}
+
+.certificate-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 193, 7, 0.5);
+}
+
+.code-icon {
+  font-size: 0.85rem;
+  color: #ffaa00;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.certificate-image {
+  border: 2px solid #00d8ff88;
+}
+/* Center icons horizontally with spacing */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;  /* space between icons */
+  margin-bottom: 3rem;
+}
+
+/* Center resume links horizontally */
+.resume-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* space between links */
+}
+
+/* Style resume links */
+.resume-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #00d8ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: #ffaa00;
+  text-decoration: underline;
+}
+
+
+
+
