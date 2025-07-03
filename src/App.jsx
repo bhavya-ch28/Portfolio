@@ -27,7 +27,7 @@ export default function App() {
  
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="pt-16">
         <Hero />
         <About />

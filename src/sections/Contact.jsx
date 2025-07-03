@@ -1,22 +1,6 @@
 import React from 'react'
 import { FaPhoneAlt, FaLinkedin, FaGithub, FaFileDownload, FaEye } from 'react-icons/fa'
 
-const SimpleMailIcon = () => (
-  <svg
-    width="28"
-    height="28"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="#1A73E8"   // Google Blue
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
-    <polyline points="3 7 12 13 21 7" />
-  </svg>
-);
 
 export default function Contact() {
   return (
@@ -31,9 +15,13 @@ export default function Contact() {
 
       {/* Icons container */}
       <div className="icon-row">
-        <a href="mailto:bsrich28@gmail.com" aria-label="Email" target="_blank" rel="noopener noreferrer">
-          <SimpleMailIcon />
-        </a>
+        <img 
+          src="/communication.png" 
+          alt="Communication" 
+          style={{ width: 28, height: 28, cursor: 'pointer' }} 
+          onClick={() => window.open('mailto:bhavyasri.ch28@gmail.com', '_self')}
+        />
+        
         <a href="tel:+46793437221" aria-label="Phone" target="_blank" rel="noopener noreferrer">
           <FaPhoneAlt size={28} color="#34A853" />
         </a>

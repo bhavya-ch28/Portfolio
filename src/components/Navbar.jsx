@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { useState, useEffect } from 'react'
 
-const sections = ['about', 'skills', 'projects', 'education', 'certifications', 'contact']
+const sections = ['About', 'Skills', 'Projects', 'Education', 'Certifications', 'Contact']
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState(sections[0])
@@ -31,21 +31,13 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black/70 backdrop-blur-lg z-50 border-b border-indigo-600 shadow-md">
-      <div className="flex justify-center gap-8 px-6 py-4 max-w-[1200px] mx-auto">
+    <nav className="navbar">
+      <div className="navbar-container">
         {sections.map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
-            className={`
-              relative text-md font-semibold tracking-wide uppercase transition-all duration-200
-              hover:text-white hover:scale-105 focus:outline-none
-              ${
-                activeSection === section
-                  ? 'text-cyan-400 after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-[2px] after:bg-cyan-400 after:rounded-full after:shadow-[0_0_6px_cyan]'
-                  : 'text-gray-400'
-              }
-            `}
+            className={`navbar-button ${activeSection === section ? 'active' : 'inactive'}`}
             aria-current={activeSection === section ? 'page' : undefined}
           >
             {section}

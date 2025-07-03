@@ -81,16 +81,27 @@ export default function CertificateCarousel() {
         </button>
 
         {/* Certificate Image */}
-        <img
-  src={certificates[index].image}
-  alt={certificates[index].name}
-  onClick={() => window.open(certificates[index].url, "_blank")}
-  className="certificate-image"
-  style={{ cursor: "pointer" }}
-  draggable={false}
-  title={`Click to view full certificate: ${certificates[index].name}`}
-/>
-
+        <div style={{ textAlign: "center" }}>
+          <img
+            src={certificates[index].image}
+            alt={certificates[index].name}
+            onClick={() => window.open(certificates[index].url, "_blank")}
+            className="certificate-image"
+            style={{ cursor: "pointer" }}
+            draggable={false}
+            title={`Click to view full certificate: ${certificates[index].name}`}
+          />
+          <h3
+            style={{
+              color: "#ffffff",
+              fontSize: "1.2rem",
+              marginTop: "1rem",
+              fontWeight: 500,
+            }}
+          >
+            {certificates[index].name}
+          </h3>
+        </div>
 
         {/* Right Arrow */}
         <button
