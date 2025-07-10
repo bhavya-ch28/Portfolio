@@ -1,7 +1,7 @@
 import React from "react";
 
 const skills = [
-  { name: "Python", imgSrc: "/icons/python-original.svg" },
+  { name: "Python", imgSrc: "${base}icons/python-original.svg" },
   { name: "Java", imgSrc: "/icons/java-original.svg" },
   { name: "Kotlin", imgSrc: "/icons/kotlin-original.svg" },
   { name: "C", imgSrc: "/icons/c-original.svg" },
