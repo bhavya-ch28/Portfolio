@@ -2,33 +2,30 @@ import React, { useState } from 'react'
 
 const projects = [
   {
-    title: 'Cloud-based Web Server Hosting',
-    link: 'https://github.com/yourgithub/cloud-web-server',
-    description:
-      'Improved scalability and performance of a web server using Amazon EC2, load balancing, and auto-scaling.',
-    tech: 'AWS EC2, Load Balancer, Auto-scaling',
+    title: "COVID‑19 Spread Simulation",
+    link: "https://github.com/bhavya-ch28/covid-19-simulation",
+    description: "Simulated COVID-19 spread using Markov Chains and analyzed trends with Pandas and Matplotlib.",
+    tech: "Python · Pandas · Matplotlib · Markov Chains",
   },
   {
-    title: 'Crop Price Prediction',
-    link: 'https://github.com/yourgithub/crop-price-prediction',
-    description:
-      'Designed and implemented machine learning models to predict crop prices based on historical data.',
-    tech: 'Python, Machine Learning',
+    "title": "Campus Connect App",
+    "link": "https://github.com/bhavya-ch28/CampusConnectApp",
+    "description": "Developed a Kotlin app delivering real-time campus updates, navigation, and student services with location-based features.",
+    "tech": "Kotlin, Android"
   },
   {
-    title: 'BTH Campus Connect App',
-    link: 'https://github.com/yourgithub/bth-campus-connect',
-    description:
-      'Built a mobile app for university students using Kotlin, providing real-time info on campus events, navigation, and services.',
-    tech: 'Kotlin, Mobile App',
+    "title": "Cloud-based Web Server Hosting",
+    "link": "https://github.com/bhavya-ch28/cloud-project-docs-",
+    "description": "Improved web server scalability and availability using AWS EC2, Load Balancer, and Auto Scaling with system monitoring and optimization.",
+    "tech": "AWS EC2, Load Balancer, Auto Scaling"
   },
   {
-    title: 'COVID-19 Spread Simulation',
-    link: 'https://github.com/yourgithub/covid19-simulation',
-    description:
-      'Simulated pandemic spread using Markov Chains in Python, summarizing and visualizing trends for specific regions.',
-    tech: 'Python, Data Analysis, Markov Chains',
+    "title": "Interactive Narrative Game System",
+    "link": "https://github.com/bhavya-ch28/interactive-narrative-game",
+    "description": "Developed a modular, object-oriented adventure game with GRASP principles featuring scene interaction, inventory management, and a smart in-game assistant.",
+    "tech": "Java, GRASP, OOP, Game Design"
   },
+  
 ]
 
 export default function Projects() {

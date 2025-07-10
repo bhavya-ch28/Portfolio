@@ -2,20 +2,30 @@ import React from 'react'
 
 const experiences = [
   {
-    role: 'Software Developer Intern',
-    company: 'TechNova Solutions',
-    duration: 'June 2024 – August 2024',
-    description:
-      'Worked on developing scalable backend APIs and integrated cloud services to optimize data pipelines. Collaborated with frontend teams using Agile methodology.',
-    tech: 'Node.js, AWS Lambda, MongoDB',
+    role: 'Freelance Developer – AI & Web Projects',
+    company: 'Remote',
+    duration: 'May 2024 – Present',
+    description: [
+      'Developed a ReactJS and Firebase website featuring 450+ DSA questions, video content, bookmarking, note-taking, and progress tracking to support coding learners.',
+      'Created a gesture-controlled virtual mouse using Python and OpenCV, showcasing AI and computer vision integration.',
+    ],
+    tech: 'ReactJS, Firebase, Python, OpenCV',
   },
   {
-    role: 'Research Assistant',
-    company: 'XYZ University, Dept. of AI',
-    duration: 'Jan 2023 – May 2023',
+    role: 'AI & ML Internship',
+    company: 'Lomaa IT',
+    duration: 'May 2023 – June 2023',
     description:
-      'Assisted in building a deep learning model for image segmentation tasks, contributed to research papers, and maintained experiment pipelines.',
-    tech: 'Python, PyTorch, OpenCV',
+      'Built and evaluated machine learning models using Python, applying AI, statistics, and deep learning concepts. Processed real-time datasets with NumPy and Pandas for model training.',
+    tech: 'Python, NumPy, Pandas, Machine Learning',
+  },
+  {
+    role: 'Cybersecurity Trainee (Coursera)',
+    company: 'Google',
+    duration: 'Jan 2025 – Mar 2025',
+    description:
+      'Gained hands-on experience with Python, Linux, SQL, and cybersecurity tools focused on threat detection and automation. Developed secure coding practices aligned with cloud-native and AI-driven development.',
+    tech: 'Python, Linux, SQL, Cybersecurity',
   },
 ]
 
@@ -36,17 +46,25 @@ export default function Experience() {
             data-aos="fade-up"
             data-aos-delay={idx * 100}
           >
-            <div className="exp-header">
-              <h3 className="exp-role">{exp.role}</h3>
-              <span className="exp-duration">{exp.duration}</span>
+            <div className="exp-header flex justify-between items-center">
+              <h3 className="exp-role text-xl font-semibold">{exp.role}</h3>
+              <span className="exp-duration text-sm text-gray-400">{exp.duration}</span>
             </div>
-            <p className="exp-company">{exp.company}</p>
-            <p className="exp-description">{exp.description}</p>
-            <div className="exp-tech">
-              <span className="exp-label">Tech Used:</span>
+            <p className="exp-company text-gray-300 italic mb-2">{exp.company}</p>
+            {Array.isArray(exp.description) ? (
+              <ul className="exp-description list-disc ml-6 mb-3">
+                {exp.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="exp-description mb-3">{exp.description}</p>
+            )}
+            <div className="exp-tech text-sm">
+              <span className="exp-label font-semibold">Tech Used: </span>
               <span className="exp-tech-text">{exp.tech}</span>
             </div>
-            {idx !== experiences.length - 1 && <hr className="exp-divider" />}
+            {idx !== experiences.length - 1 && <hr className="exp-divider my-6 border-gray-700" />}
           </div>
         ))}
       </div>

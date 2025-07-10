@@ -7,11 +7,11 @@ export default function Contact() {
     <section id="contact">
       <h2>Get In Touch</h2>
 
-      <p>
-        <strong>Open to work and collaboration!</strong>
-        <br />
-        Feel free to reach out for projects, ideas, or just a friendly chat.
-      </p>
+      <p>Always excited to learn, build, and connect with like-minded people.</p>
+         
+  <p>Feel free to reach out!</p>
+
+
 
       {/* Icons container */}
       <div className="icon-row">
@@ -25,10 +25,10 @@ export default function Contact() {
         <a href="tel:+46793437221" aria-label="Phone" target="_blank" rel="noopener noreferrer">
           <FaPhoneAlt size={28} color="#34A853" />
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-profile" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/bhavya-sri-chennamsetty-83234a24a/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
           <FaLinkedin size={28} color="#0A66C2" />
         </a>
-        <a href="https://github.com/your-github-username" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/bhavya-ch28" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
           <FaGithub size={28} color="#cbd5e1" />
         </a>
       </div>

@@ -2,20 +2,17 @@ import React, { useState } from "react";
 
 const certificates = [
   {
-    name: "My Local Certificate",
-    image: "/certificates/seven.jpeg",
-    url: "/certificates/seven.jpeg",
+    name: "AI/ML Internship",
+    image: "/certificates/lomma-it.jpg",
+    url: "/certificates/lomma-it.jpg",
   },
   {
-    name: "Google Cloud Professional Data Engineer",
-    image: "/certificates/gcp-data-engineer.png",
-    url: "https://cloud.google.com/certification/data-engineer",
+    name: "Cyber Security",
+    image: "/certificates/Coursera_Certificate.jpg",
+    url: "/certificates/Coursera_Certificate.jpg",
   },
-  {
-    name: "Machine Learning Specialization",
-    image: "/certificates/ml-specialization.png",
-    url: "https://www.coursera.org/specializations/machine-learning",
-  },
+
+  
 ];
 
 export default function CertificateCarousel() {

@@ -114,3 +114,100 @@
 .read-the-docs {
   color: #888;
 }
+section h2 {
+  color: #22d3ee;           /* your site’s signature blue */
+  font-weight: 800;
+  font-size: 2.75rem;
+  margin-bottom: 3rem;
+  border-bottom: none;      /* or add if you want */
+  padding-bottom: 0;
+  display: inline-block;
+}
+
+/* Remove special background and border from the research section */
+.research {
+  min-height: 100vh;
+  background: transparent;
+  color: white;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  border-radius: 0;
+}
+
+/* rest unchanged */
+     /* Remove rounding */
+
+
+/* Heading same as other sections */
+
+
+/* Cards remain dark but no gradient behind whole section */
+.research-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.research-item {
+  flex: 1 1 45%;
+  background-color: rgba(30, 30, 47, 0.85); /* dark but consistent */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-item:hover {
+  transform: translateY(-4px); /* subtle lift */
+  box-shadow: 0 14px 28px -7px rgba(124, 58, 237, 0.8); /* slightly stronger shadow */
+}
+
+
+
+
+
+
+.research-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.research-item p {
+  color: #ccc; /* lighter text but still subtle */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.research-item a {
+  display: inline-block;
+  background-color: #22d3ee; /* bright accent to match your navbar border color */
+  color: #1e1e2f;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(34, 211, 238, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-item a:hover {
+  background-color: #0ea5e9;
+  box-shadow: 0 8px 18px rgba(14, 165, 233, 0.7);
+}
+
+@media (max-width: 768px) {
+  .research-container {
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .research-item {
+    flex: 0 0 320px;
+  }
+}
