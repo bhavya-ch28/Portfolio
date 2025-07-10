@@ -7,7 +7,7 @@ const certificates = [
     url: "/certificates/lomma-it.jpg",
   },
   {
-    name: "Cyber Security",
+    name: "Cyber Security Trainee",
     image: "/certificates/Coursera_Certificate.jpg",
     url: "/certificates/Coursera_Certificate.jpg",
   },

@@ -35,11 +35,11 @@ export default function Contact() {
 
       {/* Resume links container */}
       <div className="resume-links">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
           <FaEye size={18} />
           <span>View Resume</span>
         </a>
-        <a href="/resume.pdf" download className="resume-link">
+        <a href="/Resume.pdf" download className="resume-link">
           <FaFileDownload size={18} />
           <span>Download Resume</span>
         </a>
