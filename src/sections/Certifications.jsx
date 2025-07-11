@@ -3,13 +3,13 @@ import React, { useState } from "react";
 const certificates = [
   {
     name: "AI/ML Internship",
-    image: "/certificates/lomma-it.jpg",
-    url: "/certificates/lomma-it.jpg",
+    image: "certificates/lomma-it.jpg",
+    url: "certificates/lomma-it.jpg",
   },
   {
     name: "Cyber Security Trainee",
-    image: "/certificates/Coursera_Certificate.jpg",
-    url: "/certificates/Coursera_Certificate.jpg",
+    image: "certificates/Coursera_Certificate.jpg",
+    url: "certificates/Coursera_Certificate.jpg",
   },
 
   

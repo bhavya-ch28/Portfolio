@@ -16,7 +16,7 @@ export default function Contact() {
       {/* Icons container */}
       <div className="icon-row">
         <img 
-          src="/communication.png" 
+          src="communication.png" 
           alt="Communication" 
           style={{ width: 28, height: 28, cursor: 'pointer' }} 
           onClick={() => window.open('mailto:bhavyasri.ch28@gmail.com', '_self')}
