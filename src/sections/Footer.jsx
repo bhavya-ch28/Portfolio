@@ -14,7 +14,7 @@ export default function Footer() {
           <a href="mailto:bsrich28@gmail.com" aria-label="Email" className="hover:text-[#ffaa00]">
             <FaEnvelope />
           </a>
-          <a href="tel:+46793437221" aria-label="Phone" className="hover:text-[#ffaa00]">
+          <a href="tel:+917093175773" aria-label="Phone" className="hover:text-[#ffaa00]">
             <FaPhone />
           </a>
           <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-[#ffaa00]">
@@ -23,10 +23,10 @@ export default function Footer() {
         </div>
 
         <div className="space-x-4">
-          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn">
+          <a href="/Resume_.pdf" target="_blank" rel="noreferrer" className="btn">
             View Resume
           </a>
-          <a href="/resume.pdf" download className="btn">
+          <a href="/Resume_.pdf" download className="btn">
             Download Resume
           </a>
         </div>
