@@ -1,4 +1,5 @@
 import React from 'react'
+import { getAssetPath } from '../utils/assetPath.js'
 
 export default function About() {
   return (
@@ -88,7 +89,7 @@ export default function About() {
 
         <div className="about-image" style={{ flexShrink: 0 }}>
           <img
-            src="/Portfolio/mine_compressed_more.jpeg"
+            src={getAssetPath("mine_compressed_more.jpeg")}
             alt="My Portrait"
             style={{
               width: '240px',
