@@ -1,27 +1,35 @@
 import React from "react";
+import { getAssetPath } from "../utils/assetPath.js";
 
-const skills = [
-  { name: "Python", imgSrc: "/icons/python-original.svg" },
-  
-  { name: "Kotlin", imgSrc: "/icons/kotlin-original.svg" },
-  
-  { name: "C++", imgSrc: "/icons/cplusplus-original.svg" },
-  { name: "HTML5", imgSrc: "/icons/html5-original.svg" },
-  { name: "CSS3", imgSrc: "/icons/css3-original.svg" },
-  { name: "JavaScript", imgSrc: "/icons/javascript-original.svg" },
-  
-  { name: "React", imgSrc: "/icons/react-original.svg" },
-  { name: "Node.js", imgSrc: "/icons/nodejs-original.svg" },
-  
-  { name: "AWS", imgSrc: "/icons/aws_logo_.png" },
- 
-  { name: "Git", imgSrc: "/icons/git-original.svg" },
-  { name: "MongoDB", imgSrc: "/icons/mongodb-original.svg" },
-  
-  { name: "VS Code", imgSrc: "/icons/vscode-original.svg" },
-  
-  
+const skillsData = [
+  { name: "Python", icon: "icons/python-original.svg" },
+  { name: "Java", icon: "icons/java-original.svg" },
+  { name: "Kotlin", icon: "icons/kotlin-original.svg" },
+  { name: "C", icon: "icons/c-original.svg" },
+  { name: "C++", icon: "icons/cplusplus-original.svg" },
+  { name: "HTML5", icon: "icons/html5-original.svg" },
+  { name: "CSS3", icon: "icons/css3-original.svg" },
+  { name: "JavaScript", icon: "icons/javascript-original.svg" },
+  { name: ".NET ", icon: "icons/NET_Core_Logo.svg" },
+  { name: "React", icon: "icons/react-original.svg" },
+  { name: "Node.js", icon: "icons/nodejs-original.svg" },
+  { name: "Angular", icon: "icons/angularjs-original.svg" },
+  { name: "AWS", icon: "icons/aws_logo_.png" },
+  { name: "Docker", icon: "icons/docker-original.svg" },
+  { name: "Kubernetes", icon: "icons/kubernetes-original.svg" },
+  { name: "Jenkins", icon: "icons/jenkins-original.svg" },
+  { name: "Git", icon: "icons/git-original.svg" },
+  { name: "MongoDB", icon: "icons/mongodb-original.svg" },
+  { name: "MySQL", icon: "icons/mysql-original.svg" },
+  { name: "VS Code", icon: "icons/vscode-original.svg" },
+  { name: "Linux / Unix", icon: "icons/Linux.svg" },
 ];
+
+// Generate skills with correct asset paths
+const skills = skillsData.map(skill => ({
+  ...skill,
+  imgSrc: getAssetPath(skill.icon)
+}));
 
 export default function Skills() {
   return (

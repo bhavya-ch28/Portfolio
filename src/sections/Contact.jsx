@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from "react";
+import { getAssetPath } from "../utils/assetPath.js";
 import { FaPhoneAlt, FaLinkedin, FaGithub, FaFileDownload, FaEye } from 'react-icons/fa'
 
 
@@ -16,7 +17,7 @@ export default function Contact() {
       {/* Icons container */}
       <div className="icon-row">
         <img 
-          src="/communication.png" 
+          src={getAssetPath("communication.png")} 
           alt="Communication" 
           style={{ width: 28, height: 28, cursor: 'pointer' }} 
           onClick={() => window.open('mailto:bhavyasri.ch28@gmail.com', '_self')}
@@ -35,11 +36,11 @@ export default function Contact() {
 
       {/* Resume links container */}
       <div className="resume-links">
-        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">
+        <a href={getAssetPath("Resume_.pdf")} target="_blank" rel="noopener noreferrer" className="resume-link">
           <FaEye size={18} />
           <span>View Resume</span>
         </a>
-        <a href="/Resume.pdf" download className="resume-link">
+        <a href={getAssetPath("Resume_.pdf")} download className="resume-link">
           <FaFileDownload size={18} />
           <span>Download Resume</span>
         </a>

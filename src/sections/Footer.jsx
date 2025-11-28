@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { getAssetPath } from "../utils/assetPath.js";
 import { FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'
 
 export default function Footer() {
@@ -23,10 +24,10 @@ export default function Footer() {
         </div>
 
         <div className="space-x-4">
-          <a href="/_Resume_.pdf" target="_blank" rel="noreferrer" className="btn">
+          <a href={getAssetPath("Resume_.pdf")} target="_blank" rel="noreferrer" className="btn">
             View Resume
           </a>
-          <a href="/_Resume_.pdf" download className="btn">
+          <a href={getAssetPath("Resume_.pdf")} download className="btn">
             Download Resume
           </a>
         </div>

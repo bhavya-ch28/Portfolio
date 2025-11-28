@@ -88,7 +88,7 @@ export default function About() {
 
         <div className="about-image" style={{ flexShrink: 0 }}>
           <img
-            src="/mine_compressed_more.jpeg"
+            src="/Portfolio/mine_compressed_more.jpeg"
             alt="My Portrait"
             style={{
               width: '240px',

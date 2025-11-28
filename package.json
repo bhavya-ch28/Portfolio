@@ -1,7 +1,7 @@
 {
   "name": "bhavya-portfolio",
   "private": true,
-  "homepage": "https://bhavya-ch28.github.io/Portfolio", 
+  "homepage": "https://bhavya-ch28.github.io/Portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,10 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",              
-    "deploy": "gh-pages -d dist"                
-  
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
