@@ -2,15 +2,16 @@ import React from 'react'
 
 const experiences = [
   {
-    role: 'Freelance Developer – AI & Web Projects',
-    company: 'Remote',
-    duration: 'May 2024 – Present',
+    role: 'Self-Initiated Projects – AI & Web Development',
+    
+    duration: 'May 2025 – Present',
     description: [
-      'Developed a ReactJS and Firebase website featuring 450+ DSA questions, video content, bookmarking, note-taking, and progress tracking to support coding learners.',
-      'Created a gesture-controlled virtual mouse using Python and OpenCV, showcasing AI and computer vision integration.',
+      'Built a full-stack React + Node.js website that uses OpenAI GPT-4.1 Mini to generate app ideas from user input, with search history, refresh option, expandable idea cards, and PDF export.',
+      'Creating Comfort Corner, an emotion-based Lovable app that generates personalized comfort spaces from user feelings.',
     ],
-    tech: 'ReactJS, Firebase, Python, OpenCV',
+    tech: 'React (Vite), Node.js, Express, OpenAI API, Lovable',
   },
+  
   {
     role: 'AI & ML Internship',
     company: 'Lomaa IT',

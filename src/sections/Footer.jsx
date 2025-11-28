@@ -23,10 +23,10 @@ export default function Footer() {
         </div>
 
         <div className="space-x-4">
-          <a href="/Resume_.pdf" target="_blank" rel="noreferrer" className="btn">
+          <a href="/_Resume_.pdf" target="_blank" rel="noreferrer" className="btn">
             View Resume
           </a>
-          <a href="/Resume_.pdf" download className="btn">
+          <a href="/_Resume_.pdf" download className="btn">
             Download Resume
           </a>
         </div>
